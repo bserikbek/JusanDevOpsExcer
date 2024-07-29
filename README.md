@@ -330,3 +330,19 @@ total 12
 [root@localhost beibitserikbek]#
 
 
+# Task7WordCounter
+
+[root@localhost beibitserikbek]# cat textCounter.sh
+# !bin/bash
+
+
+wc -w "$1" | awk '{print $1}'
+[root@localhost beibitserikbek]# cat TextFile.txt
+1. Hello World
+2. Silly Text
+3. Howdy
+4. Free Gaza
+[root@localhost beibitserikbek]#
+[root@localhost beibitserikbek]# ./textCounter.sh TextFile.txt
+11
+[root@localhost beibitserikbek]#
